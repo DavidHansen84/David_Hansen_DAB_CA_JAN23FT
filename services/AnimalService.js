@@ -102,10 +102,9 @@ class AnimalService {
     }
 
     async popular(animals) {
-        // Create a map to store the count of each animal
+        
         const animalCountMap = new Map();
     
-        // Count how many times each animal appears
         animals.forEach(animal => {
             const name = animal.Name;
             if (animalCountMap.has(name)) {
@@ -115,7 +114,7 @@ class AnimalService {
             }
         });
     
-        // Sort the animals based on the count in descending order
+       
         const sortedAnimals = animals.sort((a, b) => {
             const countA = animalCountMap.get(a.Name);
             const countB = animalCountMap.get(b.Name);
