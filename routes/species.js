@@ -33,15 +33,15 @@ router.post('/update', isAdmin, async function (req,res,next){
 router.delete('/delete', isAdmin, async function (req, res, next){
     const thisSpeciesId = req.body.SpeciesId;
 
-    // Check if there are any animals with this SpeciesId
+  // check if animals has SpeciesId
     const animalsWithSpecies = await animalService.getBySpeciesId(thisSpeciesId);
 
     if (animalsWithSpecies.length === 0) {
-        // No animals found with this SpeciesId, proceed with deletion
+        
         await speciesService.DeleteSpecies(thisSpeciesId);
         res.end();
     } else {
-        // There are animals associated with this species, send a response indicating that deletion is not allowed
+        
         next(createError(404));
     }
 });

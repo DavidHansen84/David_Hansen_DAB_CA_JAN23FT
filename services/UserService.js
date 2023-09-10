@@ -21,12 +21,11 @@ class UserService {
         }
     }
 
-    async create(fullName, username, password) {
+    async create(firstName, lastName, username, password) {
         return this.User.create(
             {
-                FullName: fullName,
+                FullName: firstName +" "+ lastName,
                 Username: username,
-                Salt: salt,
                 Password: password
             }
         ).catch( err => {

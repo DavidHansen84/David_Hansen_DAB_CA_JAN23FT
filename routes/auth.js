@@ -61,7 +61,7 @@ router.get('/signup', function (req, res, next) {
 });
 
 router.post('/signup', function (req, res, next) {
-  userService.create(req.body.fullname, req.body.username, req.body.password)
+  userService.create(req.body.firstname, req.body.lastname, req.body.username, req.body.password)
     .then(() => {
       res.redirect('/login');
     })

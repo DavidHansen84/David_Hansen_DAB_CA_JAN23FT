@@ -23,13 +23,13 @@ var { isMember, isAdmin } = require("./authMiddlewares");
 router.get('/', async function (req, res, next) {
     const animals = await animalService.get();
     const user = req.user;
-    const currentDate = new Date(); // Get the current date
+    const currentDate = new Date(); 
 
 animals.forEach(animal => {
-  const birthday = new Date(animal.Birthday); // Convert the birthday to a Date object
-  const ageInMilliseconds = currentDate - birthday; // Calculate the age in milliseconds
-  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); // Convert milliseconds to years
-  animal.Age = Math.floor(ageInYears); // Round down to get the whole years
+  const birthday = new Date(animal.Birthday); 
+  const ageInMilliseconds = currentDate - birthday; 
+  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); 
+  animal.Age = Math.floor(ageInYears); 
 });
 
     res.render('animals', { animals: animals, user: user });
@@ -62,13 +62,13 @@ router.get('/popular', async function (req, res, next) {
     const popularAnimals = await animalService.popular(animals);
     console.log("POPULAR" + popularAnimals)
     const user = req.user;
-    const currentDate = new Date(); // Get the current date
+    const currentDate = new Date(); 
 
 animals.forEach(popularAnimals => {
-  const birthday = new Date(popularAnimals.Birthday); // Convert the birthday to a Date object
-  const ageInMilliseconds = currentDate - birthday; // Calculate the age in milliseconds
-  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); // Convert milliseconds to years
-  popularAnimals.Age = Math.floor(ageInYears); // Round down to get the whole years
+  const birthday = new Date(popularAnimals.Birthday); 
+  const ageInMilliseconds = currentDate - birthday; 
+  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); 
+  popularAnimals.Age = Math.floor(ageInYears); 
 });
 
     res.render('animals', { animals: popularAnimals, user: user });
@@ -81,13 +81,13 @@ router.get('/adopted', async function (req, res, next) {
     const adoptedAnimals = await animalService.allAdopted(animals);
     console.log("ADOPTED" + adoptedAnimals)
     const user = req.user;
-    const currentDate = new Date(); // Get the current date
+    const currentDate = new Date(); 
 
 animals.forEach(adoptedAnimals => {
-  const birthday = new Date(adoptedAnimals.Birthday); // Convert the birthday to a Date object
-  const ageInMilliseconds = currentDate - birthday; // Calculate the age in milliseconds
-  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); // Convert milliseconds to years
-  adoptedAnimals.Age = Math.floor(ageInYears); // Round down to get the whole years
+  const birthday = new Date(adoptedAnimals.Birthday); 
+  const ageInMilliseconds = currentDate - birthday; 
+  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); 
+  adoptedAnimals.Age = Math.floor(ageInYears); 
 });
 
     res.render('animals', { animals: adoptedAnimals, user: user });
@@ -98,13 +98,13 @@ router.get('/age', async function (req, res, next) {
     console.log("ANIMALS " + animals)
    
     const user = req.user;
-    const currentDate = new Date(); // Get the current date
+    const currentDate = new Date(); 
 
 animals.forEach(animals => {
-  const birthday = new Date(animals.Birthday); // Convert the birthday to a Date object
-  const ageInMilliseconds = currentDate - birthday; // Calculate the age in milliseconds
-  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); // Convert milliseconds to years
-  animals.Age = Math.floor(ageInYears); // Round down to get the whole years
+  const birthday = new Date(animals.Birthday); 
+  const ageInMilliseconds = currentDate - birthday;
+  const ageInYears = ageInMilliseconds / (1000 * 60 * 60 * 24 * 365); 
+  animals.Age = Math.floor(ageInYears); 
 });
 
 res.render('animals', { animals: animals, user: user });
