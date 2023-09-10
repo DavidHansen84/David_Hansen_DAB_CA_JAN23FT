@@ -1,0 +1,98 @@
+[
+    {
+        "Id": 1,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (1, 1, 1);"
+    },
+    {
+        "Id": 2,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (2, 1, 2);"
+    },
+    {
+        "Id": 3,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (3, 2, 1);"
+    },
+    {
+        "Id": 4,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (4, 2, 2);"
+    },
+    {
+        "Id": 5,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (5, 3, 3);"
+    },
+    {
+        "Id": 6,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (6, 4, 1);"
+    },
+    {
+        "Id": 7,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (7, 4, 4);"
+    },
+    {
+        "Id": 8,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (8, 5, 1);"
+    },
+    {
+        "Id": 9,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (9, 5, 5);"
+    },
+    {
+        "Id": 10,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (10, 6, 1);"
+    },
+    {
+        "Id": 11,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (11, 7, 1);"
+    },
+    {
+        "Id": 12,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (12, 7, 5);"
+    },
+    {
+        "Id": 13,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (13, 8, 1);"
+    },
+    {
+        "Id": 14,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (14, 8, 4);"
+    },
+    {
+        "Id": 15,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (15, 8, 5);"
+    },
+    {
+        "Id": 16,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (16, 9, 1);"
+    },
+    {
+        "Id": 17,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (17, 9, 4);"
+    },
+    {
+        "Id": 18,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (18, 10, 2);"
+    },
+    {
+        "Id": 19,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (19, 11, 1);"
+    },
+    {
+        "Id": 20,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (20, 11, 2);"
+    },
+    {
+        "Id": 21,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (21, 12, 1);"
+    },
+    {
+        "Id": 22,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (22, 12, 2);"
+    },
+    {
+        "Id": 23,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (23, 13, 1);"
+    },
+    {
+        "Id": 24,
+        "query": "INSERT INTO temperaments_animals (Id, AnimalId, TemperamentId) VALUES (24, 13, 4);"
+    }
+]

@@ -1,0 +1,66 @@
+[
+    {
+        "Id": 1,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (1, 'Coco', '2020-02-12', 1, 1);"
+    },
+    {
+        "Id": 2,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (2, 'Ted', '2021-02-12', 2, 1);"
+    },
+    {
+        "Id": 3,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (3, 'Coco', '2020-02-12', 3, 2);"
+    },
+    {
+        "Id": 4,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (4, 'Everest', '2019-02-12', 4, 1);"
+    },
+    {
+        "Id": 5,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (5, 'Rocko', '2020-02-12', 5, 2);"
+    },
+    {
+        "Id": 6,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (6, 'Goldy', '2023-02-12', 6, 1);"
+    },
+    {
+        "Id": 7,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (7, 'Lizzy', '2020-02-12', 7, 2);"
+    },
+    {
+        "Id": 8,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (8, 'Goga', '2018-02-12', 8, 3);"
+    },
+    {
+        "Id": 9,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (9, 'Tweet Tweet', '2020-02-12', 9, 3);"
+    },
+    {
+        "Id": 10,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (10, 'Toothless', '2017-02-12', 10, 2);"
+    },
+    {
+        "Id": 11,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (11, 'Sophie', '2020-02-12', 1, 1);"
+    },
+    {
+        "Id": 12,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (12, 'Teddy', '2021-02-12', 2, 1);"
+    },
+    {
+        "Id": 13,
+        "query": "INSERT INTO animals (Id, Name, Birthday, SpeciesId, SizeId) VALUES (13, 'Roger', '2020-02-18', 9, 3);"
+    },
+    {
+        "Id": 14,
+        "query": "CREATE TRIGGER after_adoption AFTER INSERT ON adoptions FOR EACH ROW BEGIN UPDATE animals SET Adopted = 'True' WHERE Id = NEW.AnimalId; END;"
+    },
+    {
+        "Id": 15,
+        "query": "CREATE PROCEDURE insert_adoption (_AnimalId INT, _UserId INT) BEGIN INSERT INTO adoptions SET UserId = _UserId, AnimalId = _AnimalId;  END;"
+    },
+    {
+        "Id": 16,
+        "query": "CREATE TRIGGER cancel_adoption AFTER DELETE ON adoptions FOR EACH ROW BEGIN UPDATE animals SET Adopted = 'False' WHERE Id = OLD.AnimalId; END;"
+    }
+]

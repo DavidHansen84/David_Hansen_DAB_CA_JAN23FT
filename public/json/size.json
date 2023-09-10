@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "query": "INSERT INTO sizes (Id, Name) VALUES (1, 'small');"
+    },
+    {
+        "id": 2,
+        "query": "INSERT INTO sizes (Id, Name) VALUES (2, 'medium');"
+    },
+    {
+        "id": 3,
+        "query": "INSERT INTO sizes (Id, Name) VALUES (3, 'large');"
+    }
+]

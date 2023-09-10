@@ -1,0 +1,7 @@
+
+[
+    {
+        "Id": 2,
+        "query": "INSERT INTO adoptions (Id, UserId, AnimalId) VALUES (1, 2, 8);"
+    }
+]

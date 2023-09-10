@@ -1,0 +1,26 @@
+[
+    {
+        "Id": 1,
+        "query": "INSERT INTO temperaments (Id, Name) VALUES (1, 'calm');"
+    },
+    {
+        "Id": 2,
+        "query": "INSERT INTO temperaments (Id, Name) VALUES (2, 'scared');"
+    },
+    {
+        "Id": 3,
+        "query": "INSERT INTO temperaments (Id, Name) VALUES (3, 'energetic');"
+    },
+    {
+        "Id": 4,
+        "query": "INSERT INTO temperaments (Id, Name) VALUES (4, 'happy');"
+    },
+    {
+        "Id": 5,
+        "query": "INSERT INTO temperaments (Id, Name) VALUES (5, 'lazy');"
+    },
+    {
+        "Id": 6,
+        "query": "CREATE PROCEDURE update_temperament (_Id INT, _Name VARCHAR(50)) BEGIN UPDATE temperaments SET Name = _Name WHERE Id = _Id; END;"
+    }
+]

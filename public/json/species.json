@@ -1,0 +1,47 @@
+[
+    {
+        "Id": 1,
+        "query": "INSERT INTO species (Id, Name) VALUES (1, 'Dwarf Hamster');"
+    },
+    {
+        "Id": 2,
+        "query": "INSERT INTO species (Id, Name) VALUES (2, 'Tedy bear hamster');"
+    },
+    {
+        "Id": 3,
+        "query": "INSERT INTO species (Id, Name) VALUES (3, 'Jack-Russel');"
+    },
+    {
+        "Id": 4,
+        "query": "INSERT INTO species (Id, Name) VALUES (4, 'Budgy');"
+    },
+    {
+        "Id": 5,
+        "query": "INSERT INTO species (Id, Name) VALUES (5, 'Tortoise');"
+    },
+    {
+        "Id": 6,
+        "query": "INSERT INTO species (Id, Name) VALUES (6, 'Gold Fish');"
+    },
+    {
+        "Id": 7,
+        "query": "INSERT INTO species (Id, Name) VALUES (7, 'Lizzard');"
+    },
+    {
+        "Id": 8,
+        "query": "INSERT INTO species (Id, Name) VALUES (8, 'Bearded Dragon');"
+    },
+    {
+        "Id": 9,
+        "query": "INSERT INTO species (Id, Name) VALUES (9, 'Parrot');"
+    },
+    {
+        "Id": 10,
+        "query": "INSERT INTO species (Id, Name) VALUES (10, 'Corn snake');"
+    },
+    {
+        "Id": 11,
+        "query": "CREATE PROCEDURE update_species (_Id INT, _Name VARCHAR(50)) BEGIN UPDATE species SET Name = _Name WHERE Id = _Id; END;"
+    }
+    
+]
