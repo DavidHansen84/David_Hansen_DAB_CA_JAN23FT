@@ -49,7 +49,9 @@ router.delete('/delete', isAdmin, async function (req, res, next){
 router.post('/add', isAdmin, async function(req, res, next) {    
     let Temperament = "How do I get an input here?"
     await temperamentService.create(Temperament);
-    res.end()
+    const temperament = await temperamentService.get();
+    let user = req.user
+    res.render("temperament", {user: user , temperament: temperament})
   });
 
 module.exports = router;

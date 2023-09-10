@@ -24,6 +24,15 @@ If you are unsure of any instructions for the course assignment, contact out to 
 
 # Application Installation and Usage Instructions
 
+1. Download zip file and unpack.
+2. Open in Visual Studio Code.
+3. In the terminal type "npm install".
+4. In the terminal type "npm audit fix"
+5. In the terminal type "npm start".
+6. In the terminal press ctrl + c and enter "y", and then "npm start" again.
+7. Repeat step 5 two times.
+8. Open http://localhost:3000/animals in a browser and there you have it
+
 # Environment Variables
 
 ADMIN_USERNAME = "SystemAdmin"

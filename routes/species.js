@@ -49,7 +49,9 @@ router.delete('/delete', isAdmin, async function (req, res, next){
 router.post('/add', isAdmin, async function(req, res, next) {    
     let Species = "How do I get an input here?"
     await speciesService.create(Species);
-    res.end()
+    const species = await speciesService.get();
+    const user = req.user;
+    res.render("species", {user: user, species: species})
   });
 
 module.exports = router;
